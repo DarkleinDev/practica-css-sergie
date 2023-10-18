@@ -1,0 +1,108 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 15px;
+    max-height: 100px;
+}
+header h1{
+    color: white;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header ul > li{
+    list-style: none;
+    margin: 10px;
+}
+header ul  li > a{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+}
+
+header ul  li  a:hover{
+    background-color: rgb(50, 23, 206);
+}
+
+main{
+    margin: 10px 10px;
+}
+main h2{
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+main .context{
+    text-align: center;
+    width: 100%;
+}
+main .context > button{
+    width: 100px;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.63);
+    background-color: rgba(6, 8, 153, 0.712);
+}
+main .context > button:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: rgba(6, 10, 228, 0.712);
+}
+h2{
+    margin: 30px 10px;
+    text-transform: uppercase;
+}
+aside{
+    border: 2px solid black;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(64, 6, 172);
+}
+aside #one{
+    grid-column: 1 / 3;
+}
+aside .box-item{
+    color: white;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+}
+aside .box-item a{
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    text-decoration: none;
+}
+aside .box-item a:hover{
+    background-color: rgb(156, 100, 209);
+    transition: all 300ms;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    min-height: 50px;
+    padding: 14px;
+    margin-top: 15px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
